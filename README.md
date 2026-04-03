@@ -1,35 +1,35 @@
 
 
-# <p align="center">weatherplugin Plugin for Enigma2 (E²) ![GitHub repo size](https://img.shields.io/github/repo-size/oe-alliance-plugins/weatherplugin.svg)</p>
+# <p align="center">WeatherPlugin Plugin for Enigma2 (E²) ![GitHub repo size](https://img.shields.io/github/repo-size/oe-alliance-plugins/WeatherPlugin.svg)</p>
 
 **E2 Weather Plugin**
 
 
 ## Github status
-[![Build](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/buildbot.yml/badge.svg)](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/buildbot.yml)
-[![Lint Status](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/pylint.yml)
-[![Ruff Status](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/ruff.yml/badge.svg)](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/ruff.yml)
-[![Build Status](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/compile.yml/badge.svg)](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/compile.yml)
-[![AUTOTAG](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/autotag.yml/badge.svg)](https://github.com/oe-alliance-plugins/weatherplugin/actions/workflows/autotag.yml)
+[![Build](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/buildbot.yml/badge.svg)](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/buildbot.yml)
+[![Lint Status](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/pylint.yml)
+[![Ruff Status](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/ruff.yml/badge.svg)](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/ruff.yml)
+[![Build Status](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/compile.yml/badge.svg)](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/compile.yml)
+[![AUTOTAG](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/autotag.yml/badge.svg)](https://github.com/oe-alliance-plugins/WeatherPlugin/actions/workflows/autotag.yml)
 
 
-[![Plugin Version](https://img.shields.io/github/v/tag/oe-alliance-plugins/weatherplugin?label=Latest%20Version&color=darkviolet)](https://github.com/oe-alliance-plugins/weatherplugin/tags)
-[![Latest Release](https://img.shields.io/github/release-date/oe-alliance-plugins/weatherplugin?label=From&color=darkviolet)](https://github.com/oe-alliance-plugins/weatherplugin/releases/latest)
-[![Github last commit](https://img.shields.io/github/last-commit/oe-alliance-plugins/weatherplugin)](https://github.com/oe-alliance-plugins/weatherplugin)
-[![GitHub Activity](https://img.shields.io/github/commit-activity/y/oe-alliance-plugins/weatherplugin.svg?label=commits)](https://github.com/oe-alliance-plugins/weatherplugin/commits)
-[![GitHub Activity](https://img.shields.io/github/commit-activity/m/oe-alliance-plugins/weatherplugin.svg?label=commits)](https://github.com/oe-alliance-plugins/weatherplugin/commits)
+[![Plugin Version](https://img.shields.io/github/v/tag/oe-alliance-plugins/WeatherPlugin?label=Latest%20Version&color=darkviolet)](https://github.com/oe-alliance-plugins/WeatherPlugin/tags)
+[![Latest Release](https://img.shields.io/github/release-date/oe-alliance-plugins/WeatherPlugin?label=From&color=darkviolet)](https://github.com/oe-alliance-plugins/WeatherPlugin/releases/latest)
+[![Github last commit](https://img.shields.io/github/last-commit/oe-alliance-plugins/WeatherPlugin)](https://github.com/oe-alliance-plugins/WeatherPlugin)
+[![GitHub Activity](https://img.shields.io/github/commit-activity/y/oe-alliance-plugins/WeatherPlugin.svg?label=commits)](https://github.com/oe-alliance-plugins/WeatherPlugin/commits)
+[![GitHub Activity](https://img.shields.io/github/commit-activity/m/oe-alliance-plugins/WeatherPlugin.svg?label=commits)](https://github.com/oe-alliance-plugins/WeatherPlugin/commits)
 
 ## SonarCloud status
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_weatherplugin&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_WeatherPlugin&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
 
-[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_weatherplugin)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_WeatherPlugin)
 
 ---
 
@@ -45,7 +45,7 @@ This plugin is released under GPLv3. See [LICENSE](https://www.gnu.org/licenses/
 
 ### 🤝 Contributing & Contact
 
-weatherplugin is created by users for users and we welcome every contribution. There are no highly paid developers. There are only users who have seen a problem and done their best to fix it. This means weatherplugin will always need the contributions of users like you. How can you get involved?
+WeatherPlugin is created by users for users and we welcome every contribution. There are no highly paid developers. There are only users who have seen a problem and done their best to fix it. This means WeatherPlugin will always need the contributions of users like you. How can you get involved?
 
 For questions or feedback, feel free and please open an issue or contribute with a Pull Request!
 
