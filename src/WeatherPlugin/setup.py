@@ -31,7 +31,7 @@ from Screens.MessageBox import MessageBox
 from Components.MenuList import MenuList
 from Components.Sources.StaticText import StaticText
 from Components.ActionMap import ActionMap
-from Components.ConfigList import ConfigList, ConfigListScreen
+from Components.ConfigList import ConfigListScreen
 from Components.config import ConfigSubsection, ConfigText, ConfigSelection, \
 	getConfigListEntry, config, configfile
 from xml.etree.cElementTree import fromstring as cet_fromstring
@@ -39,7 +39,6 @@ from twisted.web.client import getPage
 from six.moves.urllib.parse import quote as urllib_quote
 import six
 
-from enigma import RT_HALIGN_RIGHT
 from skin import parameters as skinparameter
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 
