@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "E2 Weather Plugin",
+  "description_recipe": "E2 Weather Plugin",
+  "history_source_dir": "weatherplugin",
+  "internal_package_name": "enigma2-plugin-extensions-weatherplugin",
+  "module_dir_name": "WeatherPlugin",
+  "output_subdir": "weatherplugin",
+  "package_name": "enigma2-plugin-extensions-weatherplugin",
+  "plugin_src_rel": "weatherplugin",
+  "python_package": "WeatherPlugin",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "weatherplugin",
+  "rrecommends": "",
+  "rreplaces": ""
+}
