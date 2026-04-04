@@ -21,14 +21,33 @@
 #
 
 from xml.etree.cElementTree import fromstring as cet_fromstring
+import requests
+from twisted.internet.threads import deferToThread
 from twisted.internet import defer
-from twisted.web.client import getPage, downloadPage
 from enigma import eEnv
 from os import path as os_path, mkdir as os_mkdir, remove as os_remove, listdir as os_listdir
 from Components.config import config
 from Tools.Directories import resolveFilename, SCOPE_SKIN
-from six.moves.urllib.parse import quote as urllib_quote
+from urllib.parse import quote as urllib_quote
 import six
+
+
+def savePage(response, filename):
+	response.raise_for_status()
+	try:
+		open(filename, "wb").write(response.content)
+	except Exception as e:
+		return e
+
+
+def downloadPage(url, filename, params=None, headers=None, cookies=None):
+	return getPage(url, params, headers, cookies).addCallback(savePage, filename)
+
+
+def getPage(url, params=None, data=None, headers=None, cookies=None):
+	headers = headers or {}
+	headers["user-agent"] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+	return deferToThread(requests.post if data else requests.get, url, params=params, data=data, headers=headers, cookies=cookies, timeout=30.05)
 
 
 class WeatherIconItem:

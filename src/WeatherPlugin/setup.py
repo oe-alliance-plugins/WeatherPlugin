@@ -21,7 +21,6 @@
 #
 
 # for localized messages
-from __future__ import print_function
 from . import _
 
 from enigma import eListboxPythonMultiContent, getDesktop, gFont, RT_HALIGN_LEFT, \
@@ -35,14 +34,21 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import ConfigSubsection, ConfigText, ConfigSelection, \
 	getConfigListEntry, config, configfile
 from xml.etree.cElementTree import fromstring as cet_fromstring
-from twisted.web.client import getPage
-from six.moves.urllib.parse import quote as urllib_quote
+from twsted.internet.threads import deferToThread
+import requests
+from urllib.parse import quote as urllib_quote
 import six
 
 from skin import parameters as skinparameter
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 
 HD = getDesktop(0).size()
+
+
+def getPage(url, params=None, data=None, headers=None, cookies=None):
+	headers = headers or {}
+	headers["user-agent"] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+	return deferToThread(requests.post if data else requests.get, url, params=params, data=data, headers=headers, cookies=cookies, timeout=30.05)
 
 
 def initWeatherPluginEntryConfig():
