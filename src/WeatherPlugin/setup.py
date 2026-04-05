@@ -37,12 +37,26 @@ from xml.etree.cElementTree import fromstring as cet_fromstring
 from twsted.internet.threads import deferToThread
 import requests
 from urllib.parse import quote as urllib_quote
-import six
+
 
 from skin import parameters as skinparameter
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 
 HD = getDesktop(0).size()
+
+
+def ensure_binary(s, encoding='utf-8', errors='strict'):
+	if isinstance(s, str):
+		return s.encode(encoding, errors)
+	else:
+		return s
+
+
+def ensure_str(s, encoding='utf-8', errors='strict'):
+	if isinstance(s, bytes):
+		return s.decode(encoding, errors)
+	else:
+		return s
 
 
 def getPage(url, params=None, data=None, headers=None, cookies=None):
@@ -246,7 +260,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			elif language == "no-NO":  # hack
 				language = "nn-NO"
 			url = "http://weather.service.msn.com/find.aspx?src=windows&outputview=search&weasearchstr=%s&culture=%s" % (urllib_quote(self.current.city.value), language)
-			getPage(six.ensure_binary(url)).addCallback(self.xmlCallback).addErrback(self.error)
+			getPage(ensure_binary(url)).addCallback(self.xmlCallback).addErrback(self.error)
 		else:
 			self.session.open(MessageBox, _("You need to enter a valid city name before you can search for the location code."), MessageBox.TYPE_ERROR)
 
@@ -311,7 +325,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			root = cet_fromstring(xmlstring)
 			for childs in root:
 				if childs.tag == "weather" and "errormessage" in childs.attrib:
-					errormessage = six.ensure_str(childs.attrib.get("errormessage"), errors='ignore')
+					errormessage = ensure_str(childs.attrib.get("errormessage"), errors='ignore')
 					break
 			if len(errormessage) != 0:
 				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)
@@ -397,9 +411,9 @@ class MSNWeatherPluginSearchResultList(MenuList):
 		list = []
 		for childs in root:
 			if childs.tag == "weather":
-				searchlocation = six.ensure_str(childs.attrib.get("weatherlocationname"), errors='ignore')
-				searchresult = six.ensure_str(childs.attrib.get("weatherfullname"), errors='ignore')
-				weatherlocationcode = six.ensure_str(childs.attrib.get("weatherlocationcode"), errors='ignore')
+				searchlocation = ensure_str(childs.attrib.get("weatherlocationname"), errors='ignore')
+				searchresult = ensure_str(childs.attrib.get("weatherfullname"), errors='ignore')
+				weatherlocationcode = ensure_str(childs.attrib.get("weatherlocationcode"), errors='ignore')
 				if HD.width() < 1920:
 					x1, y1, w1, h1 = skinparameter.get("WeatherPluginSearchlocation", (5, 0, 500, 20))
 					x2, y2, w2, h2 = skinparameter.get("WeatherPluginSearchresult", (5, 22, 500, 20))
