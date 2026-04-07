@@ -34,7 +34,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import ConfigSubsection, ConfigText, ConfigSelection, \
 	getConfigListEntry, config, configfile
 from xml.etree.cElementTree import fromstring as cet_fromstring
-from twsted.internet.threads import deferToThread
+from twisted.internet.threads import deferToThread
 import requests
 from urllib.parse import quote as urllib_quote
 
