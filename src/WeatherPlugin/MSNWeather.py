@@ -195,9 +195,11 @@ class MSNWeather:
 		if self.callbackAllIconsDownloaded is not None:
 			self.callbackAllIconsDownloaded()
 
-	def xmlCallback(self, xmlstring):
+	def xmlCallback(self, response):
 		IconDownloadList = []
-		xmlstring = (str(xmlstring.decode())).replace("utf-16", "utf-8")
+		# Extract content from requests.Response object if needed
+		content = response.content if hasattr(response, 'content') else response
+		xmlstring = (str(content.decode())).replace("utf-16", "utf-8")
 		root = cet_fromstring(xmlstring)
 		index = 0
 		self.degreetype = "C"
@@ -264,4 +266,4 @@ class MSNWeather:
 
 
 def download(item):
-	return downloadPage(ensure_binary(item.url), open(item.filename, 'wb'))
+	return downloadPage(ensure_binary(item.url), item.filename)

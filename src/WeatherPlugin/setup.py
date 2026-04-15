@@ -319,10 +319,12 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		configfile.save()
 		self.close()
 
-	def xmlCallback(self, xmlstring):
-		if xmlstring:
+	def xmlCallback(self, response):
+		if response:
 			errormessage = ""
-			root = cet_fromstring(xmlstring)
+			# Extract content from requests.Response object
+			xml_content = response.content if hasattr(response, 'content') else response
+			root = cet_fromstring(xml_content)
 			for childs in root:
 				if childs.tag == "weather" and "errormessage" in childs.attrib:
 					errormessage = ensure_str(childs.attrib.get("errormessage"), errors='ignore')
@@ -330,7 +332,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			if len(errormessage) != 0:
 				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)
 			else:
-				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xmlstring)
+				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xml_content)
 
 	def error(self, error=None):
 		if error is not None:
@@ -375,14 +377,11 @@ class MSNWeatherPluginSearch(Screen):
 		self.close(None)
 
 	def keyOK(self):
-		pass
-		"""
 		try:
 			sel = self["entrylist"].l.getCurrentSelection()[0]
 		except Exception:
 			sel = None
 		self.close(sel)
-		"""
 
 
 class MSNWeatherPluginSearchResultList(MenuList):
