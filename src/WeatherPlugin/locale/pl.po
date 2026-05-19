@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeatherPlugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 19:06+0430\n"
+"POT-Creation-Date: 2026-04-15 20:59+0200\n"
 "PO-Revision-Date: 2015-01-04 18:17+0100\n"
 "Last-Translator: Mariusz1970 <Mariusz1970@onet.eu>\n"
 "Language-Team: Björn Freise <Mariusz1970@onet.eu>\n"
@@ -16,41 +16,53 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ../src\n"
 
+#: ../setup.py:108
 msgid "Add"
 msgstr "Dodaj"
 
+#: ../setup.py:107 ../setup.py:362
 msgid "Back"
 msgstr "Powrót "
 
+#: ../setup.py:235
 msgid "Cancel"
 msgstr "Anuluj"
 
+#: ../setup.py:105 ../setup.py:248
 msgid "City"
 msgstr "Miasto"
 
+#: ../setup.py:110 ../setup.py:237
 msgid "Delete"
 msgstr "Usuń"
 
+#: ../setup.py:109
 msgid "Edit"
 msgstr "Edytuj"
 
+#: ../plugin.py:215
 #, python-format
 msgid "Feels like %s"
 msgstr "Odczuwalna Temp. %s"
 
+#: ../plugin.py:142
 msgid "Getting weather information..."
 msgstr "Uzyskiwane informacji o pogodzie ..."
 
+#: ../plugin.py:210
 #, python-format
 msgid "Humidity: %s %%"
 msgstr "Wilgotność: %s %%"
 
+#: ../setup.py:249
 msgid "Location code"
 msgstr "Kod lokalizacji"
 
+#: ../setup.py:361
 msgid "MSN location search result"
 msgstr "Kod MSN wynik wyszukiwania lokalizacji"
 
+#: ../plugin.py:149
 msgid ""
 "No locations defined...\n"
 "Press 'Menu' to do that."
@@ -58,49 +70,64 @@ msgstr ""
 "Brak zdefiniowanej lokalizacji ..\n"
 "Naciśnij przycisk \"Menu\", aby to zrobić."
 
+#: ../setup.py:236 ../setup.py:363
 msgid "OK"
 msgstr "OK"
 
+#: ../plugin.py:214
 #, python-format
 msgid "Observation point: %s"
 msgstr "Punkt obserwacji: %s"
 
+#: ../plugin.py:213
 #, python-format
 msgid "Observation time: %s"
 msgstr "Czas obserwacji: %s"
 
+#: ../setup.py:278 ../setup.py:290
 msgid "Please enter a valid city name."
 msgstr "Wprowadź prawidłową nazwę miasta."
 
+#: ../setup.py:280 ../setup.py:293
 msgid "Please enter a valid location code for the city."
 msgstr "Wpisz poprawny kod dla lokalizacji miasta"
 
+#: ../setup.py:154 ../setup.py:309
 msgid "Really delete this WeatherPlugin Entry?"
 msgstr "Naprawdę usunąć ten wpis?"
 
+#: ../setup.py:238
 msgid "Search Code"
 msgstr "Szukaj  Kodu"
 
+#: ../plugin.py:56
 msgid "Show Weather Forecast"
 msgstr "Pokazuję Prognozę Pogody"
 
+#: ../setup.py:106 ../setup.py:250
 msgid "System"
 msgstr "System"
 
+#: ../plugin.py:56 ../plugin.py:93
 msgid "Weather Plugin"
 msgstr "Wtyczka Pogody"
 
+#: ../setup.py:223
 msgid "WeatherPlugin: Edit Entry"
 msgstr "Wtyczka Pogody: Edytuj wpis"
 
+#: ../setup.py:104
 msgid "WeatherPlugin: List of Entries"
 msgstr "Wtyczka Pogody: Lista wpisów"
 
+#: ../setup.py:265
 msgid "You need to enter a valid city name before you can search for the location code."
 msgstr "Musisz wprowadzić poprawną nazwę miasta,zanim będzie można sprawdzić kodem lokalizacje"
 
+#: ../setup.py:71
 msgid "imperial system"
 msgstr "Stopnie Fahrenheita "
 
+#: ../setup.py:71
 msgid "metric system"
 msgstr "Stopnie Celsjusza"

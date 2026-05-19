@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - weatherplugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-03 15:02+0000\n"
+"POT-Creation-Date: 2026-04-15 20:59+0200\n"
 "PO-Revision-Date: 2012-10-25 14:52+0100\n"
 "Last-Translator: Spaeleus <spaeleus@croci.org>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -20,41 +20,53 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: .../enigma2-plugins/weatherplugin\n"
 
+#: ../setup.py:108
 msgid "Add"
 msgstr "Agg."
 
+#: ../setup.py:107 ../setup.py:362
 msgid "Back"
 msgstr "Indietro"
 
+#: ../setup.py:235
 msgid "Cancel"
 msgstr "Annull."
 
+#: ../setup.py:105 ../setup.py:248
 msgid "City"
 msgstr "Città"
 
+#: ../setup.py:110 ../setup.py:237
 msgid "Delete"
 msgstr "Canc."
 
+#: ../setup.py:109
 msgid "Edit"
 msgstr "Modif."
 
+#: ../plugin.py:215
 #, python-format
 msgid "Feels like %s"
 msgstr "Percepita %s"
 
+#: ../plugin.py:142
 msgid "Getting weather information..."
 msgstr "Recupero informazioni meteo in corso..."
 
+#: ../plugin.py:210
 #, python-format
 msgid "Humidity: %s %%"
 msgstr "Umidità: %s %%"
 
+#: ../setup.py:249
 msgid "Location code"
 msgstr "Codice località"
 
+#: ../setup.py:361
 msgid "MSN location search result"
 msgstr "Risultati ricerca MSN per località"
 
+#: ../plugin.py:149
 msgid ""
 "No locations defined...\n"
 "Press 'Menu' to do that."
@@ -62,49 +74,64 @@ msgstr ""
 "Nessuna località definita...\n"
 "Permere \"Menu\" per effettuare la scelta."
 
+#: ../setup.py:236 ../setup.py:363
 msgid "OK"
 msgstr "Ok"
 
+#: ../plugin.py:214
 #, python-format
 msgid "Observation point: %s"
 msgstr "Punto di osservazione: %s"
 
+#: ../plugin.py:213
 #, python-format
 msgid "Observation time: %s"
 msgstr "Ora osservazione: %s"
 
+#: ../setup.py:278 ../setup.py:290
 msgid "Please enter a valid city name."
 msgstr "Inserire un nome di città valido."
 
+#: ../setup.py:280 ../setup.py:293
 msgid "Please enter a valid location code for the city."
 msgstr "Inserire un codice località valido per la città."
 
+#: ../setup.py:154 ../setup.py:309
 msgid "Really delete this WeatherPlugin Entry?"
 msgstr "Rimuovere la voce da WeatherPlugin?"
 
+#: ../setup.py:238
 msgid "Search Code"
 msgstr "Ric. per codice"
 
+#: ../plugin.py:56
 msgid "Show Weather Forecast"
 msgstr "Previsioni meteo"
 
+#: ../setup.py:106 ../setup.py:250
 msgid "System"
 msgstr "Sistema"
 
+#: ../plugin.py:56 ../plugin.py:93
 msgid "Weather Plugin"
 msgstr "Weather Plugin"
 
+#: ../setup.py:223
 msgid "WeatherPlugin: Edit Entry"
 msgstr "WeatherPlugin: Modificare voce"
 
+#: ../setup.py:104
 msgid "WeatherPlugin: List of Entries"
 msgstr "WeatherPlugin: elenco voci"
 
+#: ../setup.py:265
 msgid "You need to enter a valid city name before you can search for the location code."
 msgstr "Occorre inserire un nome di città valido prima di effettuare una riceca per codice  località."
 
+#: ../setup.py:71
 msgid "imperial system"
 msgstr "Sistema anglosassone"
 
+#: ../setup.py:71
 msgid "metric system"
 msgstr "Sistema metrico"

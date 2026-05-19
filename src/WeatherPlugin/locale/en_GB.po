@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugins 3.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 21:28+0100\n"
+"POT-Creation-Date: 2026-04-15 20:59+0200\n"
 "PO-Revision-Date: 2012-03-16 16:34+0100\n"
 "Last-Translator: Andy Blackburn <andyblac@o2.co.uk>\n"
 "Language-Team: none\n"
@@ -17,41 +17,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../setup.py:108
 msgid "Add"
 msgstr "Add"
 
+#: ../setup.py:107 ../setup.py:362
 msgid "Back"
 msgstr "Back"
 
+#: ../setup.py:235
 msgid "Cancel"
 msgstr "Cancel"
 
+#: ../setup.py:105 ../setup.py:248
 msgid "City"
 msgstr "City"
 
+#: ../setup.py:110 ../setup.py:237
 msgid "Delete"
 msgstr "Delete"
 
+#: ../setup.py:109
 msgid "Edit"
 msgstr "Edit"
 
+#: ../plugin.py:215
 #, python-format
 msgid "Feels like %s"
 msgstr ""
 
+#: ../plugin.py:142
 msgid "Getting weather information..."
 msgstr "Getting weather information..."
 
+#: ../plugin.py:210
 #, python-format
 msgid "Humidity: %s %%"
 msgstr ""
 
+#: ../setup.py:249
 msgid "Location code"
 msgstr ""
 
+#: ../setup.py:361
 msgid "MSN location search result"
 msgstr ""
 
+#: ../plugin.py:149
 msgid ""
 "No locations defined...\n"
 "Press 'Menu' to do that."
@@ -59,49 +71,64 @@ msgstr ""
 "No locations defined...\n"
 "Press 'Menu' to do that."
 
+#: ../setup.py:236 ../setup.py:363
 msgid "OK"
 msgstr "OK"
 
+#: ../plugin.py:214
 #, python-format
 msgid "Observation point: %s"
 msgstr ""
 
+#: ../plugin.py:213
 #, python-format
 msgid "Observation time: %s"
 msgstr ""
 
+#: ../setup.py:278 ../setup.py:290
 msgid "Please enter a valid city name."
 msgstr ""
 
+#: ../setup.py:280 ../setup.py:293
 msgid "Please enter a valid location code for the city."
 msgstr ""
 
+#: ../setup.py:154 ../setup.py:309
 msgid "Really delete this WeatherPlugin Entry?"
 msgstr "Really delete this WeatherPlugin Entry?"
 
+#: ../setup.py:238
 msgid "Search Code"
 msgstr ""
 
+#: ../plugin.py:56
 msgid "Show Weather Forecast"
 msgstr "Show Weather Forecast"
 
+#: ../setup.py:106 ../setup.py:250
 msgid "System"
 msgstr ""
 
+#: ../plugin.py:56 ../plugin.py:93
 msgid "Weather Plugin"
 msgstr "Weather Plugin"
 
+#: ../setup.py:223
 msgid "WeatherPlugin: Edit Entry"
 msgstr "WeatherPlugin: Edit Entry"
 
+#: ../setup.py:104
 msgid "WeatherPlugin: List of Entries"
 msgstr "WeatherPlugin: List of Entries"
 
+#: ../setup.py:265
 msgid "You need to enter a valid city name before you can search for the location code."
 msgstr ""
 
+#: ../setup.py:71
 msgid "imperial system"
 msgstr ""
 
+#: ../setup.py:71
 msgid "metric system"
 msgstr ""
